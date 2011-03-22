@@ -3,7 +3,8 @@
 
 # Installation
 
-Grab script from Github open it and replace your SLICEHOST\_API\_KEY, LINODE\_API\_KEY and EMAIL_ADDRESS
+  1. Grab script from Github open it
+  2. Create the files api_email.txt and api_key.txt and put in your API email address and Key in there.
 
 # Usage
 

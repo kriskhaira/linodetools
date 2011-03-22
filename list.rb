@@ -11,8 +11,8 @@ def error(message)
   exit
 end
 
-LINODE_API_KEY = ""
-EMAIL_ADDRESS = ""
+LINODE_API_KEY = IO.readlines('api_key.txt').to_s
+EMAIL_ADDRESS = IO.readlines('api_email.txt').to_s
 
 class Zone < ActiveResource::Base
   def initialize
@@ -23,6 +23,8 @@ class Zone < ActiveResource::Base
     puts @l.domain.list
   end
 end
+
+puts LINODE_API_KEY
 
 zone = Zone.new
 zone.list
